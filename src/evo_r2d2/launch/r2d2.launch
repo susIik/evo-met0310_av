@@ -1,7 +1,9 @@
 <launch>
 <param name="robot_description" command ="xacro --inorder '$(find evo_r2d2)/urdf/r2d2.urdf.xacro'"/>
+<remap from="cmd_vel" to="turtle1/cmd_vel"/>
 <node name="robot_state_publisher" pkg="robot_state_publisher" type ="robot_state_publisher"/>
+<node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" />
 <node name="joint_state_publisher" pkg="joint_state_publisher" type ="joint_state_publisher"/>
 <node name="rviz" pkg ="rviz" type ="rviz" args="-d $(find evo_r2d2)/config/r2d2.rviz"/>
-<remap from="/cmd_vel" to="/turtle1/cmd_vel"/>
+<node name="evo" pkg="r2d2_navigator" type ="fake_r2d2_controller"/>
 </launch>
