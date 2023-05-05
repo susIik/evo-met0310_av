@@ -314,6 +314,48 @@
       </visual>
       <pose frame=''>-1.502 0.092 0 0 0 -1.5708</pose>
     </link>
+    <link name='Cyl_1'>
+      <collision name='Cyl_1'>
+        <geometry>
+          <cylinder>
+            <radius>0.2</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Cyl_1'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.15</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <pose frame=''>-0.7 0 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Cyl_2'>
+      <collision name='Cyl_2'>
+        <geometry>
+          <cylinder>
+            <radius>0.2</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Cyl_1'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <radius>0.15</radius>
+            <length>1.5</length>
+          </cylinder>
+        </geometry>
+      </visual>
+      <pose frame=''>0.7 1.2 0 0 0 -1.5708</pose>
+    </link>
     <static>1</static>
   </model>
 </sdf>
