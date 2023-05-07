@@ -261,7 +261,7 @@
   <joint name="scan_joint" type="fixed">
     <parent link="box"/>
     <child link="base_scan"/>
-    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <origin xyz="0 0 0.06" rpy="0 0 0"/>
   </joint>
 
   <link name="base_scan">
@@ -329,6 +329,27 @@
       <frameName>base_scan</frameName>
       </plugin>
     </sensor>
+  </gazebo>
+
+
+  <gazebo>
+  <!-- Gazebo plugin for skid steering -->
+    <plugin name="skid_steer_drive_controller" filename="libgazebo_ros_skid_steer_drive.so">
+    <alwaysOn>true</alwaysOn>
+    <updateRate>50.0</updateRate>
+    <leftFrontJoint>left_front_wheel_joint</leftFrontJoint>
+    <rightFrontJoint>right_front_wheel_joint</rightFrontJoint>
+    <leftRearJoint>left_back_wheel_joint</leftRearJoint>
+    <rightRearJoint>right_back_wheel_joint</rightRearJoint>
+    <wheelSeparation>${2.0*baselen/3.0}</wheelSeparation>
+    <wheelDiameter>${wheeldiam}</wheelDiameter>
+    <torque>10</torque>
+    <broadcastTF>1</broadcastTF>
+    <odometryFrame>odom</odometryFrame>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>/odom</odometryTopic>
+    <robotBaseFrame>base_link</robotBaseFrame>
+    </plugin>
   </gazebo>
 
 </robot>

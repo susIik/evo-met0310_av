@@ -219,8 +219,6 @@ Visualization Manager:
         odom:
           base_footprint:
             base_link:
-              base_scan:
-                {}
               gripper_pole:
                 left_gripper:
                   left_tip:
@@ -230,6 +228,8 @@ Visualization Manager:
                     {}
               head:
                 box:
+                  base_scan:
+                    {}
                   lens:
                     {}
               left_leg:
@@ -267,7 +267,7 @@ Visualization Manager:
       Queue Size: 10
       Selectable: true
       Size (Pixels): 3
-      Size (m): 0.05000000074505806
+      Size (m): 0.029999999329447746
       Style: Flat Squares
       Topic: /scan
       Unreliable: false
@@ -302,7 +302,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.1390819549560547
+      Distance: 5.468628406524658
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -318,9 +318,9 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 0.6953967213630676
+      Pitch: 0.6097962260246277
       Target Frame: <Fixed Frame>
-      Yaw: 3.0467684268951416
+      Yaw: 2.1667704582214355
     Saved: ~
 Window Geometry:
   Displays:
