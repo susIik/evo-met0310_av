@@ -315,7 +315,7 @@
       <pose frame=''>-1.502 0.092 0 0 0 -1.5708</pose>
     </link>
     <link name='Cyl_1'>
-      <collision name='Cyl_1'>
+      <collision name='Cyl_1_Collision'>
         <geometry>
           <cylinder>
             <radius>0.2</radius>
@@ -324,7 +324,7 @@
         </geometry>
         <pose frame=''>0 0 0.25 0 -0 0</pose>
       </collision>
-      <visual name='Cyl_1'>
+      <visual name='Cyl_1_Visual'>
         <pose frame=''>0 0 0.25 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -336,7 +336,7 @@
       <pose frame=''>-0.7 0 0 0 0 -1.5708</pose>
     </link>
     <link name='Cyl_2'>
-      <collision name='Cyl_2'>
+      <collision name='Cyl_2_Collision'>
         <geometry>
           <cylinder>
             <radius>0.2</radius>
@@ -345,7 +345,7 @@
         </geometry>
         <pose frame=''>0 0 0.25 0 -0 0</pose>
       </collision>
-      <visual name='Cyl_1'>
+      <visual name='Cyl_2_Visual'>
         <pose frame=''>0 0 0.25 0 -0 0</pose>
         <geometry>
           <cylinder>
@@ -355,6 +355,44 @@
         </geometry>
       </visual>
       <pose frame=''>0.7 1.2 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Box_1'>
+      <collision name='Box_1_Collision'>
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Box_1_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.5</size>
+          </box>
+        </geometry>
+      </visual>
+      <pose frame=''>-1 -1 0 0 0 -1.5708</pose>
+    </link>
+    <link name='Box_2'>
+      <collision name='Box_2_Collision'>
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.5</size>
+          </box>
+        </geometry>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+      </collision>
+      <visual name='Box_2_Visual'>
+        <pose frame=''>0 0 0.25 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.15 0.15 1.5</size>
+          </box>
+        </geometry>
+      </visual>
+      <pose frame=''>1.9 -1.8 0 0 0 -1.5708</pose>
     </link>
     <static>1</static>
   </model>
