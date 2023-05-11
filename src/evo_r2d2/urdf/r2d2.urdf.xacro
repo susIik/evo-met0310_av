@@ -206,7 +206,7 @@
     <xacro:default_inertial mass="2"/>
   </link>
 
-  <joint name="head_swivel" type="continuous">
+  <joint name="head_swivel" type="fixed">
     <parent link="base_link"/>
     <child link="head"/>
     <axis xyz="0 0 1"/>
@@ -348,7 +348,7 @@
     <odometryFrame>odom</odometryFrame>
     <commandTopic>cmd_vel</commandTopic>
     <odometryTopic>/odom</odometryTopic>
-    <robotBaseFrame>base_link</robotBaseFrame>
+    <robotBaseFrame>base_footprint</robotBaseFrame>
     </plugin>
   </gazebo>
 
