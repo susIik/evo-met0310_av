@@ -318,7 +318,7 @@
       <collision name='Cyl_1_Collision'>
         <geometry>
           <cylinder>
-            <radius>0.2</radius>
+            <radius>0.15</radius>
             <length>1.5</length>
           </cylinder>
         </geometry>
@@ -339,7 +339,7 @@
       <collision name='Cyl_2_Collision'>
         <geometry>
           <cylinder>
-            <radius>0.2</radius>
+            <radius>0.15</radius>
             <length>1.5</length>
           </cylinder>
         </geometry>
